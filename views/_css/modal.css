@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8)
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 850px;
+	height: 500px;
+	max-width: 100%;
+}
+
+/* The Close Button */
+.close {
+	color: #e2eaeb;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #FA4067;
+	text-decoration: none;
+	cursor: pointer;
+}

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+.nav-link {
+    color: #777777;
+}
+
+.galeria-atracoes h2 {
+	color: #FA4067;
+	margin-top: 20px;
+	margin-left: 32px;
+}
+
+ul#galeria {
+	margin-top: 25px;
+	overflow: hidden;
+	list-style: none;
+    align-items: center;
+}
+
+ul#galeria li span {
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	font-size: 10pt;
+	line-height: 360px;
+	padding: 5px;
+}
+
+ul#galeria li {
+	float:left;
+	width: 200px;
+	height: 200px;
+	margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.flex-container{
+    display: flex;
+    margin: auto;
+    width: 94.4%;
+    min-width: 320px;
+    background-color: #ffffff;
+    height: 60px;
+    align-items:baseline;
+    justify-content: flex-end;
+}
+
+a#btn-go-checkout {
+	width: fit-content;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8)
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+	color: #e2eaeb;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #FA4067;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: #e2eaeb;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+	text-decoration: none;
+	}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #e2eaeb;
+	font-size: 12px;
+	font-weight: bolder;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0,0,0,.3);
+	margin-top: 10px;
+}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul#galeria li#img01 {
+	background: url('../img/projeto-tamar/thumb.png') no-repeat;
+	background-size: 200px 200px;
+}
+
+ul#galeria li#img02 {
+	background: url('../img/fortaleza-santa-cruz-anhatomirim/thumb.jpg') no-repeat;
+	background-size: 200px 200px;
+}
+
+ul#galeria li#img03 {
+	background: url('../img/std-img-size/thumb-500x500.jpg') no-repeat;
+	background-size: 200px 200px;
+}
+
+
+@media(max-width: 992px) {
+	ul#galeria li {
+		width: 143px;
+		height: 143px;
+	}
+}   

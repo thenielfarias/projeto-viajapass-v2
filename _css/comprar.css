@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.container-externo {
+    height: 350px;
+    width: 750px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.form-select {
+    width: 553px;
+}
+
+.btn-primary {
+    width: fit-content;
+}

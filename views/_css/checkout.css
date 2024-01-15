@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+.container-externo {
+    border: solid 1px #003C52;
+    height: 560px;
+    width: 690px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.flex-container {
+    border-right: dashed 1px #003C52;
+    height: 559.4px;
+    width: 350px;
+}
+
+.flex-container h2 {
+    color: #003c52;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.flex-container h3 {
+    color: #003c52;
+    margin-left: 15px;
+    font-size: 14pt;    
+}
+
+.flex-container h4 {
+    color: #FA4067;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 10pt;
+    text-align: left;
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+.flex-container h6 {
+    color: #e2eaeb;
+    background-color: #003c52;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 10pt;
+    text-align: left;
+    margin-top: 25px;
+    font-weight: normal;
+    border: solid 1px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.flex-container h5 {
+    color: #003c52;
+    font-size: 10pt;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.flex-container p {
+    color: #003c52;
+    margin-left: 15px;
+    font-size: 8pt;        
+}
+
+.flex-container li {
+    color: #003c52;
+    font-size: 10pt; 
+    list-style: disc;
+}
+
+.compra h2 {
+    color: #003c52;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 12pt;    
+}
+
+.mb-3 {
+    margin-left: 15px;
+}
+
+.form-label {
+    margin-bottom: 0px;
+    color: #003c52;
+    font-size: 10pt; 
+}
+
+.form-text {
+    font-size: 8pt;
+}
+
+.form-control {
+    height: 30px;
+    width: 305px;
+    margin-right: 10px;
+}
+
+label#telInput {
+    width: 250px;
+}
+
+.input {
+    margin-bottom: 5px;
+}
+
+.viajantes {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.viajantes p {
+    font-size: 10pt;
+    color: #003c52;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.form-select {
+    height: 30px;
+    width: 60px;
+    margin-left: 5px;
+    margin-top: 10px;
+    border-color: #CED4DA;
+}
+
+.data {
+    display: flex;
+    align-items: baseline;   
+}
+    
+.data p {
+    font-size: 10pt;
+    color: #003c52;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.data-control {
+    width: 172px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.preco {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #003c52;
+    margin-left: 2px;
+    border: none;
+    width: 75px;
+}
+
+.rs {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #003c52;
+    margin-left: 5px;
+}
+
+.preco::placeholder {
+    color: #003c52;
+}
+
+.preco:focus {
+    outline: none !important;
+    border: none;
+}
+
+.form-check-label {
+    font-size: 10pt;
+    color: #003c52;
+}
+
+.form-check {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.form-check img {
+    margin-left: 5px;
+    max-width: 50%;
+}
+
+.btn-success {
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.pax {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    color: #212529;
+    border: solid 0.5px #CED4DA;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.pax:focus {
+    outline: none !important;
+    border: solid 0.5px #CED4DA;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 0.5;
+   height: 30px;
+}
+
+@media(max-width: 992px) {
+    .preco {
+        margin-left: 0px;
+        padding-left: 0px;
+        font-size: 13pt;
+    }
+    .rs {
+        margin-right: 2px;
+        margin-left: 2px;
+        padding-right: 0px;
+        font-size: 13pt;
+    }
+
+    .container-externo {
+        height: 1115px;
+        width: 345px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex-container {
+        height: 530px;
+        width: 345px;
+        border-right: none;
+        margin-bottom: 5px;
+    }
+
+    .compra {
+        margin-top: 5px;
+        border-top: dashed 1px #003C52;
+    }
+
+    .pax {
+        margin-right: 6px;
+    }
+
+    .btn-success {
+        margin-bottom: 5px;
+        margin-right: 15px;
+    }
+
+    .data-control {
+        width: 168px;
+    }
+}

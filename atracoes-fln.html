@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajaPASS · Os melhores passeios do destino inclusos em um único pass</title>
+    <link rel="icon" href="ico/ico_transparente.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <link rel="stylesheet" type="text/css" href="_css/atracoes.css">
+</head>
+<script type="text/javascript" language="javascript" src="_js/script.js"></script>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light style="background-color: #ffffff;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+          <img src="img/logo.png" width="120" height="64">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html#funcionamento">Como funciona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="atracoes-fln.html">Atrações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comprar.html">Comprar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="dest-atracoes">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="atracoes-fln.html">Florianópolis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="atracoes-bc.html">Balneário Camboriú</a>
+      </li>
+  </div>
+  <div class="galeria-atracoes">
+    <h2>Atrações inclusas</h2>
+    <ul id="galeria">
+      <li id="img01" onclick="openModal('modal-1');currentSlide(1)" class="hover-shadow"><span>Projeto Tamar</span></li>
+      <li id="img02" onclick="openModal('modal-2');currentSlide(1)" class="hover-shadow"><span>Santa Cruz de Anhatomirim</span></li>
+      <li id="img03" onclick="openModal('modal-3');currentSlide(1)" class="hover-shadow"><span>Nome atração 03</span></li>
+      <li id="img03" onclick="openModal('modal-4');currentSlide(1)" class="hover-shadow"><span>Nome atração 04</span></li>
+      <li id="img03" onclick="openModal('modal-5');currentSlide(1)" class="hover-shadow"><span>Nome atração 05</span></li>
+      <li id="img03" onclick="openModal('modal-6');currentSlide(1)" class="hover-shadow"><span>Nome atração 06</span></li>
+      <li id="img03" onclick="openModal('modal-7');currentSlide(1)" class="hover-shadow"><span>Nome atração 07</span></li>
+      <li id="img03" onclick="openModal('modal-8');currentSlide(1)" class="hover-shadow"><span>Nome atração 08</span></li>
+      <li id="img03" onclick="openModal('modal-9');currentSlide(1)" class="hover-shadow"><span>Nome atração 09</span></li>
+      <li id="img03" onclick="openModal('modal-10');currentSlide(1)" class="hover-shadow"><span>Nome atração 10</span></li>
+      <li id="img03" onclick="openModal('modal-11');currentSlide(1)" class="hover-shadow"><span>Nome atração 11</span></li>
+      <li id="img03" onclick="openModal('modal-12');currentSlide(1)" class="hover-shadow"><span>Nome atração 12</span></li>
+    </ul>
+    <!-- The Modal/Lightbox -->
+    <div id="modal-1" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-1')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-1">
+          <div class="numbertext">1 / 3 - Projeto Tamar</div>
+          <img src="img/projeto-tamar/img1.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-1">
+          <div class="numbertext">2 / 3 - Projeto Tamar</div>
+          <img src="img/projeto-tamar/img2.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-1">
+          <div class="numbertext">3 / 3 - Projeto Tamar</div>
+          <img src="img/projeto-tamar/img3.jpg" style="width:100%" alt="">
+        </div>  
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-2" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-2')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-2">
+          <div class="numbertext">1 / 3 - Fortaleza de Santa Cruz de Anhatomirim</div>
+          <img src="img/fortaleza-santa-cruz-anhatomirim/img1.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-2">
+          <div class="numbertext">2 / 3 - Fortaleza de Santa Cruz de Anhatomirim</div>
+          <img src="img/fortaleza-santa-cruz-anhatomirim/img2.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-2">
+          <div class="numbertext">3 / 3 - Fortaleza de Santa Cruz de Anhatomirim</div>
+          <img src="img/fortaleza-santa-cruz-anhatomirim/img3.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>      
+    <div id="modal-3" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-3')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-3">
+          <div class="numbertext">1 / 3 - Atração 03</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-3">
+          <div class="numbertext">2 / 3 - Atração 03</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-3">
+          <div class="numbertext">3 / 3 - Atração 03</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-4" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-4')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-4">
+          <div class="numbertext">1 / 3 - Atração 04</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-4">
+          <div class="numbertext">2 / 3 - Atração 04</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-4">
+          <div class="numbertext">3 / 3 - Atração 04</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-5" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-5')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-5">
+          <div class="numbertext">1 / 3 - Atração 05</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-5">
+          <div class="numbertext">2 / 3 - Atração 05</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-5">
+          <div class="numbertext">3 / 3 - Atração 05</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-6" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-6')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-6">
+          <div class="numbertext">1 / 3 - Atração 06</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-6">
+          <div class="numbertext">2 / 3 - Atração 06</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-6">
+          <div class="numbertext">3 / 3 - Atração 06</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-7" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-7')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-7">
+          <div class="numbertext">1 / 3 - Atração 07</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-7">
+          <div class="numbertext">2 / 3 - Atração 07</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-7">
+          <div class="numbertext">3 / 3 - Atração 07</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-8" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-8')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-8">
+          <div class="numbertext">1 / 3 - Atração 08</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-8">
+          <div class="numbertext">2 / 3 - Atração 08</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-8">
+          <div class="numbertext">3 / 3 - Atração 08</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-9" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-9')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-9">
+          <div class="numbertext">1 / 3 - Atração 09</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-9">
+          <div class="numbertext">2 / 3 - Atração 09</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-9">
+          <div class="numbertext">3 / 3 - Atração 09</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-10" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-10')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-10">
+          <div class="numbertext">1 / 3 - Atração 10</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-10">
+          <div class="numbertext">2 / 3 - Atração 10</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-10">
+          <div class="numbertext">3 / 3 - Atração 10</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-11" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-11')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-11">
+          <div class="numbertext">1 / 3 - Atração 11</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-11">
+          <div class="numbertext">2 / 3 - Atração 11</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-11">
+          <div class="numbertext">3 / 3 - Atração 11</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+    <div id="modal-12" class="modal">
+      <span class="close cursor" onclick="closeModal('modal-12')">&times;</span> 
+      <div class="modal-content">
+        <div class="modal-12">
+          <div class="numbertext">1 / 3 - Atração 12</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>   
+        <div class="modal-12">
+          <div class="numbertext">2 / 3 - Atração 12</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>    
+        <div class="modal-12">
+          <div class="numbertext">3 / 3 - Atração 12</div>
+          <img src="img/std-img-size/gallery-800x600.jpg" style="width:100%" alt="">
+        </div>  
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <a class="btn btn-primary" id="btn-go-checkout" href="http://localhost:3000/checkout-fln.html" role="button">Ir a página de compra</a>
+  </div>
+  <section id="prefooter">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li><strong>Atendimento ao Cliente</strong></li>
+            <li>
+              <a class="ajuda" href="faq.html">Central de Ajuda</a>
+            </li>
+            <li>
+              <a class="ajuda" href="atendimento.html">Falar com a gente</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col order-1" id="google_translate_element2">
+          <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+        </div>
+        <div class="col order-5">
+          <ul>
+            <li>
+              <p><strong>Siga-nos</strong><br/>
+              <a href="http://tripadvisor.com/viajapass" target="_blank"><img src="ico/trip.png"></a>
+              <a href="http://instagram.com/viajapass" target="_blank"><img src="ico/insta.png"></a>                          
+              <a href="http://facebook.com/viajapass" target="_blank"><img src="ico/fb.png"></a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+      <img src="img/logo.png">
+      <p>&copy 2021 Viajapass. Todos os direitos reservados<br/>
+      CNPJ: 00.000.000/0000-00</p>
+  </footer>
+</body>
+</html>

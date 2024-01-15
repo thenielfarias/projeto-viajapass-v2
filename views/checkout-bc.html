@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajaPASS · Os melhores passeios do destino inclusos em um único pass</title>
+    <link rel="icon" href="ico/ico_transparente.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <link rel="stylesheet" type="text/css" href="_css/checkout.css">
+</head>
+<script type="text/javascript" language="javascript" src="_js/script.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light style="background-color: #ffffff;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="http://localhost/home.html">
+					<img src="img/logo.png" width="120" height="64">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="http://localhost/home.html#funcionamento">Como funciona</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://localhost/atracoes-fln.html">Atrações</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="http://localhost/comprar.html">Comprar</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-externo">
+			<div class="flex-container">
+				<h2>Viaja<span style="color: #FA4067;">PASS</span></h2>
+				<h3>Balneário Camboriú</h3>
+				<h4>Válido por <strong>7 dias</strong> após a data inicial de utilização.<h4>
+				<h5>Atrações inclusas:</h5>
+				<ul>
+					<li>Nome atração 01</li>
+					<li>Nome atração 02</li>
+					<li>Nome atração 03</li>
+					<li>Nome atração 04</li>
+					<li>Nome atração 05</li>
+					<li>Nome atração 06</li>
+					<li>Nome atração 07</li>
+					<li>Nome atração 08</li>
+					<li>Nome atração 09</li>
+					<li>Nome atração 10</li>
+					<li>Nome atração 11</li>
+					<li>Nome atração 12</li>
+				</ul>
+				<h6>Após a compra e verificação do pagamento, você receberá em seu e-mail um voucher digital com orientações sobre tudo o que você precisa saber para utilização do seu pass e para que tenha a melhor experiência.</h6>
+			</div>
+			<div class="compra">
+				<h2>Insira seus dados para comprar</h2>
+				<form action='/send' method='post' class="form">
+					<input type="hidden" name="destino" value="BBCAM">
+					<div class="mb-3">
+						<div class="input">
+							<label for="nameInput" class="form-label">Nome completo do titular da compra (18+)</label>
+							<input type="text" class="form-control" id="nameInput" name="nome" pattern="([A-Za-z])\w+\s+([A-Za-z])\w+" placeholder="Nome, Sobrenome" onclick="clearField('nameInput')" required>
+						</div>
+						<div class="input">
+							<label for="mailInput" class="form-label">E-mail</label>
+							<input type="email" class="form-control" id="mailInput" name="email" onclick="clearField('mailInput')" required>
+							<div id="emailHelp" class="form-text">A confirmação será enviada para este e-mail</div>
+						</div>
+						<div class="input">
+							<label for="mailConfirm" class="form-label">Confirmar endereço de e-mail</label>
+							<input type="email" class="form-control" id="mailConfirm" onclick="clearField('mailConfirm')" required>
+						</div>
+						<div class="input">
+							<label for="telInput" class="form-label">Telefone</label>
+							<input type="tel" class="form-control" id="telInput" name="telefone" pattern="[0-9]+$" placeholder="(__) _____-____" onclick="clearField('telInput')" required>
+						</div>
+					</div>
+					<div class="data">
+						<p>Utilização a partir de:</p>
+						<label for="dateInput" class="form-label"></label>
+						<input type="date" class="data-control form-control" id="dateInput" name="checkin" onkeydown="return false"/>
+						<script>
+							dateInput.min = new Date().toISOString().split("T")[0];
+						</script>
+					</div>
+					<div class="viajantes" oninput="calc_total()">
+						<p>Viajantes:</p>
+						<div>
+							<input type="number" id="qtd" class="pax form-label" name="pax" min="1" max="6" value="1">
+						</div>
+						<p><label for="tot" class="valor-total">Valor total:<span class="rs">R$</span></label><input class="preco" id="tot" name="gb" value="198,00" readonly/></p>
+					</div>
+					<div class="pagos">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="canal" id="flexRadio-1" value="1" checked>
+							<label class="form-check-label" for="flexRadio-1">Pagar com PayPal</label><img src="ico/paypal.png">
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="canal" id="flexRadio-2" value="2">
+							<label class="form-check-label" for="flexRadio-2">Pagar com Mercado Pago</label><img src="ico/marcadopago.png">
+						</div>
+					</div>
+					<div class="finalizar">
+						<input type='submit' id="submit" class="btn btn-success" value='Comprar' onclick="checkName();isEmail();checkEmails();checkPhone();dateFill();getQtd();payOption()">
+					</div>
+				</form>
+			</div>
+		</div>
+		<section id="prefooter">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<ul>
+							<li><strong>Atendimento ao Cliente</strong></li>
+							<li>
+								<a class="ajuda" href="http://localhost/faq.html">Central de Ajuda</a>
+							</li>
+							<li>
+								<a class="ajuda" href="http://localhost/atendimento.html">Falar com a gente</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col order-1" id="google_translate_element2">
+						<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+					</div>
+					<div class="col order-5">
+						<ul>
+							<li>
+								<p><strong>Siga-nos</strong><br/>
+								<a href="http://tripadvisor.com/viajapass" target="_blank"><img src="ico/trip.png"></a>
+								<a href="http://instagram.com/viajapass" target="_blank"><img src="ico/insta.png"></a>                          
+								<a href="http://facebook.com/viajapass" target="_blank"><img src="ico/fb.png"></a></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			  </div>
+		</section>
+		<footer>
+			<img src="img/logo.png">
+			<p>&copy 2021 Viajapass. Todos os direitos reservados<br/>
+			CNPJ: 00.000.000/0000-00</p>
+		</footer>
+	</body>
+</html>

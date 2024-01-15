@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajaPASS · Os melhores passeios do destino inclusos em um único pass</title>
+    <link rel="icon" href="ico/ico_transparente.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+</head>
+<script type="text/javascript" language="javascript" src="_js/script.js"></script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light style="background-color: #ffffff;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="img/logo.png" width="120" height="64">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#funcionamento">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="atracoes-fln.html">Atrações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprar.html">Comprar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <img src="img/cover.png" class="img-fluid" alt="capa">
+    </div>
+    <div>
+        <form class="d-flex">
+            <select class="form-select" id="select">
+                <option selected>Escolha seu destino</option>
+                <option value="1">Florianópolis</option>
+                <option value="2">Balneário Camboriú</option>
+            </select>
+            <input class="btn btn-primary" type="button" value="Buscar" onClick="redirect()">
+        </form>
+    </div>
+    <section id="funcionamento">
+        <div class="container-fluid">
+            <h1>Como funciona</h1>
+            <h2>Aproveite mais de sua viagem com economia e praticidade.</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="img/func1.png">
+                        <p>Compre seu pass online com facilidade e segurança. Obtenha acesso aos melhores passeios, atividades e atrações do destino.<strong> Tudo incluído em seu pass</strong>.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/func2.png">
+                        <p>Após a compra, você receberá um voucher digital no seu e-mail contendo um <strong>QR code</strong>. Basta apresentá-lo para admissão nas atrações.</p>                            
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/func3.png">
+                        <p>Aproveite o máximo de sua viagem e tenha uma experiência memorável com uma seleção das melhores atrações do destino. É prático e te ajuda a economizar.</p>                     
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prefooter">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><strong>Atendimento ao Cliente</strong></li>
+                        <li>
+                            <a class="ajuda" href="faq.html">Central de Ajuda</a>
+                        </li>
+                        <li>
+                            <a class="ajuda" href="atendimento.html">Falar com a gente</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col order-1" id="google_translate_element2">
+                    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+                </div>
+                <div class="col order-5">
+                    <ul>
+                        <li>
+                            <p><strong>Siga-nos</strong><br/>
+                            <a href="http://tripadvisor.com/viajapass" target="_blank"><img src="ico/trip.png"></a>
+                            <a href="http://instagram.com/viajapass" target="_blank"><img src="ico/insta.png"></a>                          
+                            <a href="http://facebook.com/viajapass" target="_blank"><img src="ico/fb.png"></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <img src="img/logo.png">
+        <p>&copy 2021 Viajapass. Todos os direitos reservados<br/>
+        CNPJ: 00.000.000/0000-00</p>
+    </footer>
+</body>
+</html>

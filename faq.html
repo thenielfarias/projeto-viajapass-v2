@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajaPASS · Os melhores passeios do destino inclusos em um único pass</title>
+    <link rel="icon" href="ico/ico_transparente.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+    <link rel="stylesheet" type="text/css" href="_css/faq.css">
+</head>
+<script type="text/javascript" language="javascript" src="_js/script.js"></script>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light style="background-color: #ffffff;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="img/logo.png" width="120" height="64">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html#funcionamento">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="atracoes-fln.html">Atrações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comprar.html">Comprar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="faq">
+        <h2>Perguntas Frequentes (FAQ)</h2>
+        <button class="accordion">Mudou a data da minha viagem. Como faço para alterar a data inicial de utilização do meu pass?</button>
+        <div class="panel">
+            <p>Para alterar a data inicial de utilização do seu pass, basta entrar em contato conosco através de nossos canais de atendimento disponíveis em <a href="atendimento.html">Falar com a gente</a>. Nossa equipe irá te auxilar com a alteração.</p>
+        </div>
+
+        <button class="accordion">Não vou conseguir viajar. Como solicito o cancelamento da compra? Há custos?</button>
+        <div class="panel">
+            <p>O cancelamento é gratuíto e você pode solicitar através de nossos canais de atendimento disponíveis em <a href="atendimento.html">Falar com a gente</a>. Nossa equipe irá te auxilar com o cancelamento e reembolso.</p>
+        </div>
+
+        <button class="accordion">Tive um imprevisto, não consegui utilizar meu pass na data prevista e não comuniquei antes. Como devo proceder?</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Item 4</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Item 5</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+    </div>
+    <section id="prefooter">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul>
+                        <li><strong>Atendimento ao Cliente</strong></li>
+                        <li>
+                            <a class="ajuda" href="faq.html">Central de Ajuda</a>
+                        </li>
+                        <li>
+                            <a class="ajuda" href="atendimento.html">Falar com a gente</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col order-1" id="google_translate_element2">
+                    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+                </div>
+                <div class="col order-5">
+                    <ul>
+                        <li>
+                            <p><strong>Siga-nos</strong><br/>
+                            <a href="http://tripadvisor.com/viajapass" target="_blank"><img src="ico/trip.png"></a>
+                            <a href="http://instagram.com/viajapass" target="_blank"><img src="ico/insta.png"></a>                          
+                            <a href="http://facebook.com/viajapass" target="_blank"><img src="ico/fb.png"></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <img src="img/logo.png">
+        <p>&copy 2021 Viajapass. Todos os direitos reservados<br/>
+        CNPJ: 00.000.000/0000-00</p>
+    </footer>
+</body>
+</html>

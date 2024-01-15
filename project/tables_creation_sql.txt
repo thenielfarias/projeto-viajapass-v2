@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS vendas (
+	id smallserial PRIMARY KEY,
+	data_compra timestamp NOT NULL DEFAULT current_timestamp,
+	nome varchar(50) NOT NULL,
+	email varchar(50) NOT NULL,
+	telefone bigint NOT NULL,
+	checkin date NOT NULL,
+	pax integer NOT NULL,
+	gb money NOT NULL,
+	destino varchar(20) NOT NULL
+)
+
+
+CREATE TABLE pdfs (
+    id SERIAL PRIMARY KEY,
+    telefone VARCHAR(20) NOT NULL,
+    content BYTEA
+)
+
+
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL
+)

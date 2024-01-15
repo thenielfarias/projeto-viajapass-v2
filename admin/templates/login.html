@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login · ViajaPASS</title>
+    <link rel="icon" href="static/ico_transparente.png" type="image/x-icon">
+    <style>
+        @charset "UTF-8";
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            height: 50px;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: linear-gradient(to bottom right, #810752, #003C52);
+            color: #e2eaeb;
+        }
+
+        .form-style {
+            padding: 20px;
+            border: 1px solid #003C52;
+            background-color: #e2eaeb;
+            color: #003C52;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        }
+
+        .form-style input[type="text"],
+        .form-style input[type="password"],
+        .form-style input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .form-style input[type="submit"] {
+            background-color: #FA4067;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-style input[type="submit"]:hover {
+            background-color: #FA4067;
+        }
+
+        .flash-message {
+            color: red;
+            font-size: 0.7em; 
+            margin-top: 10px;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <img src="static/logo.png" class="logo" alt="Logo">
+    <div class="form-container">
+        <form class="form-style" action="/login" method="post">
+            <label for="username">Usuário:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Senha:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+            {% with messages = get_flashed_messages(category_filter=["error"]) %}
+            {% if messages %}
+                <div class="flash-message">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% endwith %}    
+        </form>
+    </div>
+</body>
+</html>

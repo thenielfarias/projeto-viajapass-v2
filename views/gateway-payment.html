@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViajaPASS · Os melhores passeios do destino inclusos em um único pass</title>
+    <link rel="icon" href="ico/ico_transparente.png" type="image/x-icon">
+</head>
+<script type="text/javascript" language="javascript" src="_js/script.js"></script>
+<script>
+    window.onload = function()
+    {
+        var canal = localStorage.getItem("canal")
+        if (canal == 1) {
+            location.replace("thanks-paypal.html");
+        }
+        else if (canal == 2) {
+            location.replace("thanks-mercadopago.html");
+        }
+    }
+</script>
+</html>
